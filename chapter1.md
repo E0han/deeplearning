@@ -12,8 +12,6 @@ _**机器学习方法 **_中主要包含**有监督**和**无监督:**
 
 **无监督学习：** 只有输入x。无监督学习目前一般用于**聚类\(cluster\)**问题，即给定一批数据，根据这批数据的特点，将其分为多个类别。
 
-
-
 **神经网络\(neural network\):**
 
 让机器学习，一般需要：
@@ -22,5 +20,42 @@ _**机器学习方法 **_中主要包含**有监督**和**无监督:**
 2. 学习数据 data
 3. 让模型model通过学习数据data学会解决特定问题的**学习算法learn**
 
-![](/assets/import.png)图中的每个圆圈代表一个个神经元（neuron），其中网络层1中的每个neuron 都与网络层2中的美恶搞neuron相连
+![](/assets/import.png)图中的每个圆圈代表一个个神经元（neuron），其中网络层1中的每个neuron 都与网络层2中的美恶搞neuron相连。每条线上的w都代表权重. 
+
+neural network工作时，将前一层网络中的每个neuron值与权重w相乘，传递给下一层网络中的neuron，同时每个neuron都会接受一个**偏移量\(bias\).** 即在图中有:
+
+```
+w11*a1 + w12*a2 + w13*a3 + bias1 = b1
+w21*a1 + w22*a2 + w23*a3 + bias2 = b2
+```
+
+写成矩阵如下:
+
+![](/assets/import.pnghttps:/dn-anything-about-doc.qbox.me/document-uid49570labid2864timestamp1493273775452.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
