@@ -35,3 +35,28 @@ w21*a1 + w22*a2 + w23*a3 + bias2 = b2
 
 ![](/assets/import.pnghttps:/dn-anything-about-doc.qbox.me/document-uid49570labid2864timestamp1493273775452.png)
 
+这是一个线性方程组，但是神经网络中不仅是有线性方程，回到神经网络模型图中，网络层2中的b1和b2到输出，还需要经历一次非线性运算g,即：
+
+```
+g(b1)=h1
+g(b2)=h2
+```
+
+在神经网络中，将上述的g称作**激活函数\(**Activity Rule**\)，**在实际运用中，有很多激活函数可以选择，本笔记介绍最经典的一种sigmoid激活函数，它的数学形态是:$$$$
+
+![](/assets/sigmoid.png)
+$$
+
+
+
+$$
+显而易见，输入的x值越大，g\(x\)越接近1；输入的x值越小，g\(x\)越接近0
+
+使用非线性运算的理由如下:
+
+在如图所示的**深度学习网络**中：
+
+![](/assets/deep_learning_network.png)
+
+网络1和网络2组成的尺寸为2x3的
+
