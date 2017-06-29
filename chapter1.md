@@ -130,6 +130,13 @@ Red dots in the diagram represent b1, Green dots less than 0, so they are not be
 "备注：alpha在这里被称为-**超参数\(hyper parameter\)**"
 
 ### 2.4 参数\(parameter\)与超参数\(hyper parameter\)
+#####2.4.1 区别
+theta称为参数，alpha称为超参数，因为theta决定了model的性质，并且theta的最终值是由学习算法learn学到的，不需要手工设定，而alpha则不同，在这里alpha并不是模型model中的参数，而是在学习算法learn中决定了梯度下降算法每一步能走多远的参数，他需要手工设定，并且决定了得到最优theta的过程，即**超参数决定如何得到最优参数**
+
+#####2.4.2 超参数alpha--学习速率
+在上面提到的超参数alpha称为学习速率(learning rate)。 因为alpha越大，参数theta更新的幅度就越大，可能会更快的达到minimum，但是alpha如果设定的太大，则会直接越过最低点，甚至导致损失函数值不降反升。
+
+由此可见，设定**合理的**学习速率alpha值非常重要，实际做法是先将alpha设定较小，比如0.001，观察每一次参数theta更新后损失函数J如何变化，如果J变大了（结果并不准确了），就将alpha的值**除以10**，变成0.0001，直到J开始变小，又不会因为值过小导致血的太慢的临界值。
 
 ### 2.5 Summary 总结：
 
